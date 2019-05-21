@@ -1,0 +1,34 @@
+.layout-login{
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas:
+    ". . . . ."
+    ". . login . ."
+    ". . . . . "
+}
+form{
+    grid-area: login;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*form{
+    width: 375px;
+    margin: 0 auto;
+    background-color: white;
+}*/
+input[type="text"], input[type="password"], button{
+    width: 100%;
+    border-radius: 5px;
+}
+button{
+    color: white;
+    background-color: #c3dffa;
+}
+.corlogin{
+    background-color: #fafafa;
+}

@@ -1,0 +1,6 @@
+table, tr, th, td{
+    border-color: blueviolet;
+    border-style: groove;
+    border-width: 3px;
+    border-collapse: collapse; /*Junta as bordas*/
+}

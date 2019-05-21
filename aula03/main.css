@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+body{
+  background-color: lightpink;
+  text-align: center;
+  font-size: 24pt;
+}
+h1{
+  font-size: 30pt;
+}
+h2, h3{
+  font-size: 28pt;
+}
+.imagem{
+    width: 700px;
+    margin: 0 auto;
+}
+.img_mulher{
+width: 300px;
+margin: 0 auto;
+}
+.imagem img, .img_mulher img{
+  width: 100%;
+}
+.justificado{
+  text-align: justify;
+}
+.fonte{
+  font-family: 'Shadows Into Light', cursive;
+}
+.referencia{
+  text-align: right;
+}
+.menu{
+  text-align: center;
+}
+a{
+  font-style: italic;
+  color: black;
+}
+a:hover{
+  color: white;
+}

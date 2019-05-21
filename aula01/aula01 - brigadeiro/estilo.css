@@ -1,0 +1,55 @@
+body{
+    background-color: black;
+    font-style: italic;
+    color: yellow;
+}
+h1{
+    color: white;
+    font-style: oblique;
+    text-align: center;
+}
+p{
+    color: lightblue;
+    font-size: 15pt;
+}
+ul{
+    color: red;
+    font-size: 12pt;
+}
+ol{
+    color: red;
+    font-size: 12pt;
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+/*Quando o mouse passar por cima*/
+a:hover{
+    color: black;
+    background-color: white;
+}
+/*Define um "a" especifico*/
+a:link{
+    color: white;
+}
+/*Quando o link é visitado
+a:visited{
+    color: yellow;
+}*/
+
+.fonte{
+    color: white;
+}
+.colher{
+    color: darkcyan;
+}
+/*".fonte" e ".colher" são classes*/
+.imagem{
+    width: 300px;
+    margin: 0 auto;
+}
+.imagem img{
+  width: 100%;  
+}
