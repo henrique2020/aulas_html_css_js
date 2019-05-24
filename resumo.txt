@@ -1,0 +1,112 @@
+Class = .nomedaclasse, usado quando se pensa em chamar mais vezes
+Id = #nomedoid, usado quando se pensa em chamar apenas uma vez
+span = Altera diretamente o estilo em parte do html, <span class="xxx">texto com estilo diferente</span>
+div = serve para alterar o estilo em partes específicas da página e posicionar objetos
+
+----------------------------------------------------------------------------------------------------------
+
+table = tabela  |   tr = linha
+th = cabeçalho  |   td = dados
+'border-style:' = define o tipo de borda
+'border-collapse: collapse;' = junta as bordas
+
+----------------------------------------------------------------------------------------------------------
+
+<img src="nomedaimagem.formato"> = coloca uma imagem no html
+
+----------------------------------------------------------------------------------------------------------
+
+'<ul>' | '</ul>' = lista
+'<ol>' | '</ol>' = lista ordenada
+'<li>' | '</li>' = usado para os itens da lista
+
+----------------------------------------------------------------------------------------------------------
+
+'<a href="link" target="_blank">' = linka para outra página | 'target="_blank"' = abre o link em nova guia
+a:hover{                        |   Quando o mouse passar
+    color: black;               |   por cima, o fundo do
+    background-color: white;    |   link fica preto e a
+}                               |   cor do link branco
+
+a:link{             |   Define um "a"
+    color: white;   |   especifico para
+}                   |   ficar branco
+
+a:visited{          |   A cor do link
+    color: yellow;  |   fica amarela
+}                   |   após ser clicado
+
+----------------------------------------------------------------------------------------------------------
+
+.imagem{                |   Define o
+    width: 300px;       |   tamanho
+    margin: 0 auto;     |   máximo da
+}                       |   imagem
+
+.imagem img{    |   Define quanto do tamanho
+  width: 100%;  |   máximo vai ser utilizado
+}
+
+----------------------------------------------------------------------------------------------------------
+
+var = variavel de escopo global, pode ser chamado dentro de if, for, while
+let = variavel de escopo de bloco, só funciona dentro do bloco em que foi criada, bloco = if, for, while
+const = variavel de escopo de bloco, funciona como o let, mas não tem como ser alterado; const xxx = "eu";
+        não tem como virar: xxx = "ele";
+
+----------------------------------------------------------------------------------------------------------
+form =  cria um formulário
+fieldset cria a borda do formulário, fica dentro do form, pode existir mais de um fieldset dentro do form
+
+'<legend>'    |   '</legend>' = Cria uma legenda dentro do form e do fieldset
+<label for id="nome">Nome:</label> = Cria a legenda nome antes do input com id="nome"
+
+Dentro do input (input id="x" type="x" ...), select, radio, checkbox: 
+id="nome" = define o id do input como nome
+type="text" = define que os dados dentro do input são de texto
+name='nome' = define que o nome do input é nome
+placeholder="xxx" = É o que vai aparecer dentro do input
+required = define que essa campo não pode estar em branco
+
+<select name="comunismo" id="batatas">  |   Cria um caixa em
+<option value="1">xxx</option>          |   que se pode 
+option value="2">xx</option>            |   escolher uma das
+<option value="3">x</option>            |   três opções definidas
+</select>                               |   no option
+
+<input type="checkbox" name="futebol" value="1"> Futebol    |   Checkbox, necessita do mesmo
+<input type="checkbox" name="volei" value="1"> Volei        |   valor, mas de nomes diferentes
+
+<input type="radio" name="contrato" value="1"> Sim  |   Radio, necessita do mesmo
+<input type="radio" name="contrato" value="0"> Não  |   nome, mas valores diferentes
+
+----------------------------------------------------------------------------------------------------------
+
+<header> - Define um cabeçalho para um documento ou seção
+<nav> - Define um container para links de navegação
+<section> - Define uma seção em um documento
+<article> - Define uma seção independente
+<aside> - Define uma área lateral para inserir conteúdo
+<footer> - Define um rodapé para um documento ou seção
+
+----------------------------------------------------------------------------------------------------------
+
+O método getFullYear () retorna o ano de uma data como um número de quatro dígitos
+O método getDate () retorna o dia de uma data como um número (1-31)
+O método getTime () retorna o número de milissegundos desde 1º de janeiro de 1970
+O método getHours() retorna as horas de uma data como um número (0-23):
+O método getMinutes() retorna os minutos de uma data como um número (0 a 59):
+O método getSeconds() retorna os segundos de uma data como um número (0-59):
+O método getMilliseconds() retorna os milissegundos de uma data como um número (0-999):
+
+O método getDay() retorna o dia da semana de uma data como um número (0-6):
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    document.getElementById("demo").innerHTML = days[d.getDay()];
+
+O método getMonth() retorna o mês de uma data como um número (0-11):
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
+    "October", "November", "December"];
+    document.getElementById("demo").innerHTML = months[d.getMonth()];
+
+getUTCxxx() datas do fuso horário universal
+

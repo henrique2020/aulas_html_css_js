@@ -15,7 +15,6 @@ cor.addEventListener("click", function(e){
     document.querySelector("#container").style = "color: white; background-image: url('imagem_dark.png')";
 });
 
-
 var vidas = document.querySelector(".vida");
 var direcoes = [];
 var cont = 0;
