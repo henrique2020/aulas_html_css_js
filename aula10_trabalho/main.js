@@ -19,13 +19,12 @@ var vidas = document.querySelector(".vida");
 var direcoes = [];
 var cont = 0;
 
-var btnConfirm_movimentos = document.querySelector(".movimento")
+var btnConfirm_movimentos = document.querySelector(".movimento");
 btnConfirm_movimentos.addEventListener("click", function(e){
     e.preventDefault();
     var name = document.querySelector(".nome");
     if (name.value == "" || name.value == null) {
         name.value = "Gasparzinho";
-        console.log("Cheguei "+name.value);
     }
     document.querySelector(".nome").disabled = true;
     document.querySelector(".vida").disabled = true;
